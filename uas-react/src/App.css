@@ -1,0 +1,71 @@
+.App {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('./images/background2.png') 100% center; 
+}
+
+.search-bar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 750px;
+  margin-left: 25px;
+}
+
+.search-keyword {
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid #BDC3C7;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+}
+
+.search-keyword:focus {
+  border: 2px solid #787586;
+  transition: 0.2s;
+}
+
+.search-button {
+  width: 80px;
+  height: 36px;
+  border: 2px solid #BDC3C7;
+  background: #BDC3C7;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.search-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: white;
+}
+
+.search-button span::after {
+  /* content: '\00bb'; */
+  content: "earch";
+  font-size: 20px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: white;
+}
+
+.search-button:hover span {
+  padding-right: 43px;
+  color: white;
+}
+
+.search-button:hover span::after {
+  opacity: 1;
+  right: 0;
+  color: white;
+}
